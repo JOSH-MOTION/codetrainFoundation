@@ -114,7 +114,7 @@ const Home = () => {
             </div>
 
             {/* Stats Card */}
-            <div className="bg-white rounded-2xl shadow-xl p-6 space-y-4">
+            {/* <div className="bg-white rounded-2xl shadow-xl p-6 space-y-4">
               <h3 className="font-bold text-gray-800 text-lg">By the Numbers</h3>
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
@@ -130,7 +130,7 @@ const Home = () => {
                   <span className="font-bold text-blue-600 text-xl">50+</span>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Side - Timeline (matches height of two images) */}
