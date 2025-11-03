@@ -13,14 +13,14 @@ export default function HeroSection() {
               <span className="text-sm text-white">Codetrain Foundation</span>
             </div>
             
-            <h1 className="text-5xl lg:text-7xl font-semibold leading-tight">
+            <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
               Empowering Africa's
-              <span className="block bg-clip-text italic">
+              <span className="block bg-clip-text">
                 Next Inventors
               </span>
             </h1>
             
-            <p className="text-lg lg:text-xl text-gray-300 leading-relaxed max-w-lg">
+            <p className="text-lg lg:text-xl text-gray-700 leading-relaxed max-w-lg">
               Every young African deserves the opportunity to learn, build, and thrive.
               Your donation funds scholarship that unlock careers in technology
             </p>
@@ -39,7 +39,7 @@ export default function HeroSection() {
             <div className="flex items-center gap-8 pt-4">
               <div className="flex items-center gap-2">
                 <Zap className="w-5 h-5 text-yellow-400" />
-                <span className="text-sm text-gray-300 font-semibold">100% of your donation goes directly to fund students's scholarship</span>
+                <span className="text-sm text-gray-700 font-semibold">100% of your donation goes directly to fund students's scholarship</span>
               </div>
               {/* <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
