@@ -8,13 +8,13 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="space-y-8 animate-fade-in">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-700 rounded-full border border-purple-400/30 backdrop-blur-sm text-white">
+            {/* <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-700 rounded-full border border-purple-400/30 backdrop-blur-sm text-white">
               <Sparkles className="w-4 h-4" />
               <span className="text-sm text-white">Codetrain Foundation</span>
-            </div>
+            </div> */}
             
-            <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-              Empowering Africa's
+            <h1 className="text-5xl lg:text-7xl font-bold leading-tight text-[#180749]">
+              Empower Africa's
               <span className="block bg-clip-text">
                 Next Innovators
               </span>
@@ -26,7 +26,7 @@ export default function HeroSection() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="group px-8 py-4 bg-[#0c0127] rounded-lg font-semibold text-white shadow-lg shadow-purple-500/50 hover:shadow-purple-500/70 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
+              <button className="group px-8 py-4 bg-[#ffbf00] text-[#0c0127] rounded-lg font-semibold  shadow-lg shadow-purple-500/50 hover:shadow-purple-500/70 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
                 Sponsor a student
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
