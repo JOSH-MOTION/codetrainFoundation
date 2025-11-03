@@ -14,7 +14,7 @@ const Navbar = () => {
 //   };
 
   return (
-    <nav className="sticky top-0 z-50 shadow-sm bg-orange-200">
+    <nav className="sticky top-0 z-50 shadow-sm bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
@@ -31,7 +31,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link to="/product" className="text-gray-700 hover:text-gray-900 font-medium">
-                  Products
+                  Stdent
                 </Link>
               </li>
               <li>
@@ -67,7 +67,7 @@ const Navbar = () => {
               />
             </form> */}
             <Link to="/cart" className="relative">
-            <button className="group px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg font-semibold text-white shadow-lg shadow-purple-500/50 hover:shadow-purple-500/70 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
+            <button className="group px-8 py-4 bg-blue-700 rounded-lg font-semibold text-white shadow-lg shadow-purple-500/50 hover:shadow-purple-500/70 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
                 Sponsor a student
                 
               </button>
