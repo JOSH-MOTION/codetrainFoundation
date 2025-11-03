@@ -8,10 +8,10 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="space-y-8 animate-fade-in">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-700 rounded-full border border-purple-400/30 backdrop-blur-sm text-white">
+            {/* <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-700 rounded-full border border-purple-400/30 backdrop-blur-sm text-white">
               <Sparkles className="w-4 h-4" />
               <span className="text-sm text-white">Codetrain Foundation</span>
-            </div>
+            </div> */}
             
             <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
               Empowering Africa's
@@ -31,7 +31,7 @@ export default function HeroSection() {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
               
-              <button className="px-8 py-4 bg-white/10 backdrop-blur-sm rounded-lg font-semibold text-white border border-white/20 hover:bg-white/20 transition-all duration-300">
+              <button className="px-8 py-4 bg-white/10 backdrop-blur-sm rounded-lg font-semibold text-black border border-white/20 hover:bg-white/20 transition-all duration-300">
                 Donate Now
               </button>
             </div>
@@ -63,7 +63,7 @@ export default function HeroSection() {
               </div>
               
               {/* Floating Elements */}
-              <div className="absolute top-8 right-8 bg-white/10 backdrop-blur-md px-6 py-3 rounded-xl border border-white/20 animate-float">
+              {/* <div className="absolute top-8 right-8 bg-white/10 backdrop-blur-md px-6 py-3 rounded-xl border border-white/20 animate-float">
                 <div className="text-2xl font-bold text-white">10K+</div>
                 <div className="text-xs text-gray-300">Active Students</div>
               </div>
@@ -77,7 +77,7 @@ export default function HeroSection() {
                   </div>
                   <span className="text-sm text-white font-medium">Join thousands</span>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
