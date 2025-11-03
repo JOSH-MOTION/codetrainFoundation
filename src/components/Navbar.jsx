@@ -67,10 +67,10 @@ const Navbar = () => {
               />
             </form> */}
             <Link to="/cart" className="relative">
-              <ShoppingCart className="text-gray-700" size={24} />
-              {/* <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
-                {cartCount}
-              </span> */}
+            <button className="group px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg font-semibold text-white shadow-lg shadow-purple-500/50 hover:shadow-purple-500/70 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
+                Sponsor a student
+                
+              </button>
             </Link>
           </div>
         </div>
