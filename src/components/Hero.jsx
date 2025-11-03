@@ -56,7 +56,7 @@ export default function HeroSection() {
               {/* Placeholder for your actual image */}
               <div className="w-full h-full flex items-center justify-center">
                 <img
-                  src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80"
+                  src="/image.jpg"
                   alt="Hero"
                   className="w-full h-full object-cover rounded-3xl group-hover:scale-105 transition-transform duration-700"
                 />

@@ -2,7 +2,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/Navbar'
 import HeroSection from './components/Hero'
-import Home from './Pages/Home'
+import Home from './pages/Home'
+
 
 function App() {
 
