@@ -65,7 +65,7 @@ export default function HeroSection() {
               {/* Floating Elements */}
               <div className="absolute top-8 right-8 bg-white/10 backdrop-blur-md px-6 py-3 rounded-xl border border-white/20 animate-float">
                 <div className="text-2xl font-bold text-white">10K+</div>
-                <div className="text-xs text-gray-300">Active Users</div>
+                <div className="text-xs text-gray-300">Active Students</div>
               </div>
               
               <div className="absolute bottom-8 left-8 bg-white/10 backdrop-blur-md px-6 py-3 rounded-xl border border-white/20 animate-float-delayed">
