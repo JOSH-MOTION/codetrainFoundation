@@ -26,12 +26,12 @@ export default function HeroSection() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="group px-8 py-4 bg-[#ffbf00] text-[#0c0127] rounded-lg font-bold  shadow-lg shadow-purple-500/50 hover:shadow-purple-500/70 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer">
+              <button className="group px-8 py-4 bg-[#ffbf00] text-[#0c0127] rounded-lg font-bold  shadow-lg hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer">
                 Sponsor a student
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
               
-              <button className="px-8 py-4 bg-[#0c0127] font-semibold text-[#ffbf00] rounded-lg font-bold  shadow-lg shadow-purple-500/50 hover:shadow-purple-500/70 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer">
+              <button className="px-8 py-4 bg-[#0c0127] font-semibold text-[#ffbf00] rounded-lg font-bold  shadow-lg   hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer">
                 Donate Now
               </button>
             </div>
@@ -50,9 +50,9 @@ export default function HeroSection() {
           
           {/* Image Side */}
           <div className="relative lg:h-[600px] h-[400px] group">
-            <div className="absolute inset-0 bg-linear-to-r from-purple-500 to-pink-500 rounded-3xl blur-3xl opacity-30 group-hover:opacity-40 transition-opacity duration-500"></div>
+            <div className="absolute inset-0 rounded-3xl blur-3xl opacity-30 group-hover:opacity-40 transition-opacity duration-500"></div>
             
-            <div className="relative h-full bg-linear-to-br from-purple-500/20 to-pink-500/20 rounded-3xl border border-white/10 backdrop-blur-sm overflow-hidden">
+            <div className="relative h-full rounded-3xl border border-white/10 backdrop-blur-sm overflow-hidden">
               {/* Placeholder for your actual image */}
               <div className="w-full h-full flex items-center justify-center">
                 <img
