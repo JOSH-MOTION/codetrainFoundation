@@ -69,11 +69,11 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-50 via-blue-50 to-purple-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
       <div className="container mx-auto px-6 py-16">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-6xl font-bold mb-4 bg-linear-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
+          <h1 className="text-6xl font-bold mb-4 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
             OUR STORY
           </h1>
           <p className="text-gray-600 text-lg">A journey through time and memories</p>
@@ -81,7 +81,7 @@ const Home = () => {
 
         {/* Main Content */}
         <div className="grid lg:grid-cols-5 gap-12 max-w-7xl mx-auto">
-          {/* Left Side - Two Images Vertical */}
+          {/* Left Side - Two Images and Stats */}
           <div className="lg:col-span-3 space-y-6">
             {/* First Image */}
             <div className="relative group overflow-hidden rounded-2xl shadow-2xl">
@@ -133,47 +133,52 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Right Side - Timeline */}
-          <div className="lg:col-span-1">
-            <div className="relative">
-              {/* Timeline Line */}
-              <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-400 via-pink-400 to-blue-400"></div>
+          {/* Right Side - Timeline (matches height of two images) */}
+          <div className="lg:col-span-2">
+            <div className="relative h-full">
+              {/* Timeline Container with scroll */}
+              <div className="h-[41rem] overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-purple-400 scrollbar-track-gray-100">
+                <div className="relative">
+                  {/* Timeline Line */}
+                  <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-400 via-pink-400 to-blue-400"></div>
 
-              {/* Timeline Events */}
-              <div className="space-y-8">
-                {timelineEvents.map((event, index) => {
-                  const IconComponent = event.icon;
-                  return (
-                    <div 
-                      key={event.year} 
-                      className="relative pl-20 group"
-                      style={{
-                        animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`
-                      }}
-                    >
-                      {/* Timeline Dot */}
-                      <div className={`absolute left-4 w-9 h-9 bg-gradient-to-br ${event.color} rounded-full flex items-center justify-center shadow-lg ring-4 ring-white group-hover:scale-125 transition-transform duration-300`}>
-                        <IconComponent className="w-5 h-5 text-white" />
-                      </div>
+                  {/* Timeline Events */}
+                  <div className="space-y-6">
+                    {timelineEvents.map((event, index) => {
+                      const IconComponent = event.icon;
+                      return (
+                        <div 
+                          key={event.year} 
+                          className="relative pl-20 group"
+                          style={{
+                            animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`
+                          }}
+                        >
+                          {/* Timeline Dot */}
+                          <div className={`absolute left-4 w-9 h-9 bg-gradient-to-br ${event.color} rounded-full flex items-center justify-center shadow-lg ring-4 ring-white group-hover:scale-125 transition-transform duration-300`}>
+                            <IconComponent className="w-5 h-5 text-white" />
+                          </div>
 
-                      {/* Content Card */}
-                      <div className="bg-white rounded-xl shadow-lg p-2 hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100">
-                        <div className="flex items-center gap-3 mb-2">
-                          <span className={`text-2xl font-bold bg-gradient-to-r ${event.color} bg-clip-text text-transparent`}>
-                            {event.year}
-                          </span>
-                          <Calendar className="w-4 h-4 text-gray-400" />
+                          {/* Content Card */}
+                          <div className="bg-white rounded-xl shadow-lg p-4 hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100">
+                            <div className="flex items-center gap-3 mb-2">
+                              <span className={`text-2xl font-bold bg-gradient-to-r ${event.color} bg-clip-text text-transparent`}>
+                                {event.year}
+                              </span>
+                              <Calendar className="w-4 h-4 text-gray-400" />
+                            </div>
+                            <h3 className="text-lg font-bold text-gray-800 mb-2">
+                              {event.title}
+                            </h3>
+                            <p className="text-gray-600 text-sm leading-relaxed">
+                              {event.description}
+                            </p>
+                          </div>
                         </div>
-                        <h3 className="text-xl font-bold text-gray-800 mb-2">
-                          {event.title}
-                        </h3>
-                        <p className="text-gray-600 leading-relaxed">
-                          {event.description}
-                        </p>
-                      </div>
-                    </div>
-                  );
-                })}
+                      );
+                    })}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -190,6 +195,20 @@ const Home = () => {
             opacity: 1;
             transform: translateY(0);
           }
+        }
+        
+        .scrollbar-thin::-webkit-scrollbar {
+          width: 6px;
+        }
+        
+        .scrollbar-thumb-purple-400::-webkit-scrollbar-thumb {
+          background-color: rgb(192 132 252);
+          border-radius: 3px;
+        }
+        
+        .scrollbar-track-gray-100::-webkit-scrollbar-track {
+          background-color: rgb(243 244 246);
+          border-radius: 3px;
         }
       `}</style>
     </div>

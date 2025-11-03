@@ -4,7 +4,7 @@ import { ArrowRight, Sparkles, Zap } from 'lucide-react';
 export default function HeroSection() {
   return (
     <div className="min-h-screen">
-      <div className="container mx-auto px-6 py-16 lg:py-24">
+      <div className="container mx-auto px-6 py-16 lg:py-14">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="space-y-8 animate-fade-in">
