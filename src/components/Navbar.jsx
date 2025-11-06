@@ -1,15 +1,16 @@
-import { useState } from 'react';
-import { Menu, X, Heart } from 'lucide-react';
+import { useState } from "react";
+import { Menu, X, Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'Our Mission', href: '#mission' },
-    { name: 'Stories', href: '#stories' },
-    { name: 'Partners', href: '#partners' },
-    { name: 'Students', href: 'https://codetrainafrica.com' },
+    { name: "Home", href: "#home" },
+    { name: "Our Mission", href: "#mission" },
+    { name: "Stories", href: "#stories" },
+    { name: "Partners", href: "#partners" },
+    { name: "Students", href: "https://codetrainafrica.com" },
   ];
 
   return (
@@ -52,11 +53,13 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center">
-            <button className="group relative px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl font-bold text-white transition-all duration-300 flex items-center gap-2 shadow-lg shadow-orange-500/30 hover:shadow-xl hover:shadow-orange-500/50 hover:scale-105 active:scale-95 overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <Heart className="w-5 h-5 relative z-10 transition-transform group-hover:scale-110 fill-white" />
-              <span className="relative z-10">Sponsor a Student</span>
-            </button>
+            <Link to="https://paystack.shop/pay/vt_4t777qss" target="_blank">
+              <button className="group relative px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl font-bold text-white transition-all duration-300 flex items-center gap-2 shadow-lg shadow-orange-500/30 hover:shadow-xl hover:shadow-orange-500/50 hover:scale-105 active:scale-95 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <Heart className="w-5 h-5 relative z-10 transition-transform group-hover:scale-110 fill-white" />
+                <span className="relative z-10">Sponsor a Student</span>
+              </button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -78,7 +81,9 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div
         className={`lg:hidden transition-all duration-300 ease-in-out ${
-          mobileMenuOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+          mobileMenuOpen
+            ? "max-h-[600px] opacity-100"
+            : "max-h-0 opacity-0 overflow-hidden"
         }`}
       >
         <div className="px-6 pt-4 pb-6 space-y-2 bg-gradient-to-b from-gray-50 to-white border-t border-gray-100">
@@ -88,15 +93,17 @@ const Navbar = () => {
               href={link.href}
               className="block px-5 py-3.5 text-gray-700 hover:bg-orange-50 hover:text-orange-600 rounded-xl font-medium transition-all duration-200 transform hover:translate-x-1"
               onClick={() => setMobileMenuOpen(false)}
-              style={{ 
+              style={{
                 animationDelay: `${index * 50}ms`,
-                animation: mobileMenuOpen ? 'slideIn 0.3s ease-out forwards' : 'none'
+                animation: mobileMenuOpen
+                  ? "slideIn 0.3s ease-out forwards"
+                  : "none",
               }}
             >
               {link.name}
             </a>
           ))}
-          <button 
+          <button
             className="w-full mt-4 px-6 py-4 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl font-bold text-white flex items-center justify-center gap-2 shadow-lg shadow-orange-500/30 hover:shadow-xl transition-all duration-300 active:scale-95"
             onClick={() => setMobileMenuOpen(false)}
           >

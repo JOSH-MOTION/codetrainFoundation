@@ -1,11 +1,13 @@
 import { Heart, BookOpen, Rocket, Eye } from "lucide-react";
 import TransparencySection from "./Transform";
 import Problem from "./Problem";
-
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 import PartnerSection from "./PartnerSection";
 import CTADonationSection from "./CTADonationSection";
 
 export default function Home() {
+  const { ref, inView } = useInView({ triggerOnce: true });
   return (
     <div className="min-h-screen bg-white">
       {/* Orange Top Border */}
@@ -30,30 +32,34 @@ export default function Home() {
           </p>
 
           {/* Stats Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8  ">
+          <div ref={ref} className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
             <div>
               <div className="text-4xl md:text-3xl font-bold text-gray-900 mb-2">
-                GH₵120,000+
+                GH₵
+                {inView && <CountUp end={120000} duration={3} separator="," />}+
               </div>
               <div className="text-gray-600 text-sm">
                 In scholarships awarded
               </div>
             </div>
+
             <div>
               <div className="text-4xl md:text-3xl font-bold text-gray-900 mb-2">
-                700+
+                {inView && <CountUp end={700} duration={3} />}+
               </div>
               <div className="text-gray-600 text-sm">graduates trained</div>
             </div>
+
             <div>
               <div className="text-4xl md:text-3xl font-bold text-gray-900 mb-2">
-                89%
+                {inView && <CountUp end={89} duration={3} />}%
               </div>
               <div className="text-gray-600 text-sm">job placement</div>
             </div>
+
             <div>
               <div className="text-4xl md:text-3xl font-bold text-gray-900 mb-2">
-                91%
+                {inView && <CountUp end={91} duration={3} />}%
               </div>
               <div className="text-gray-600 text-sm">
                 report improved
