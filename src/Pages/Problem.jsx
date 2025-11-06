@@ -103,7 +103,7 @@ export default function CTAStoriesSection() {
                 <img 
                   src="/jeremy.jpg" 
                   alt="Jermaine"
-                  className="w-full h-64 object-cover"
+                  className="w-full h-64 object-top object-cover"
                 />
               </div>
 

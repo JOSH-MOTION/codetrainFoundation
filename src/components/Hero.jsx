@@ -40,7 +40,7 @@ export default function DonationHero() {
               
               <p className="text-white/90 text-lg md:text-xl mb-10 max-w-xl">
                 Empowering African youth, women and people with<br className="hidden sm:block" />
-                quantities through tech education
+                disabilities through tech education
               </p>
 
               {/* CTA Buttons */}
@@ -58,24 +58,22 @@ export default function DonationHero() {
               </div>
 
               {/* Partner Logos */}
+              <h1 className='text-white mb-3'>Supported by</h1>
               <div className="flex items-center gap-8 flex-wrap">
-                <div className="flex items-center gap-2 text-white/80">
-                  <div className="flex items-center gap-1">
-                    <div className="w-6 h-6 bg-white/20 rounded" />
-                    <div className="w-6 h-6 bg-white/20 rounded" />
-                  </div>
-                  <span className="text-sm font-medium">LagosYellow</span>
+                <div className="text-white/80">
+                 <img src="codetrain-logo.webp" alt="" className='w-16' />
                 </div>
                 
                 <div className="text-white/80">
-                  <span className="text-2xl font-bold">giz</span>
+                 <img src="/giz-logo.webp" alt="" className='w-10' />
                 </div>
                 
-                <div className="flex items-center gap-2 text-white/80">
-                  <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
-                    <div className="w-4 h-4 bg-white rounded-full" />
-                  </div>
-                  <span className="text-sm font-medium">Mastercard</span>
+                <div className="text-white/80">
+                 <img src="/mastercard-foundation.png" alt="" className='w-12' />
+                </div>
+
+                <div className="text-white/80">
+                 <img src="Chancen-Logo.png" alt="" className='w-16' />
                 </div>
               </div>
             </div>
