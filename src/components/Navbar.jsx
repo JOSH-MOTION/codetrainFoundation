@@ -20,20 +20,12 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#home" className="flex items-center gap-3 group">
-              <div className="relative">
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center transform transition-all duration-300 group-hover:scale-105 group-hover:rotate-3 shadow-lg">
-                  <span className="text-white font-bold text-2xl">C</span>
-                </div>
-                <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-orange-400 rounded-full animate-pulse"></div>
-              </div>
-              <div>
-                <h1 className="font-bold text-xl text-gray-900 leading-tight group-hover:text-orange-600 transition-colors">
-                  Codetrain
-                </h1>
-                <p className="text-xs text-orange-600 font-semibold uppercase tracking-wider">
-                  Foundation
-                </p>
-              </div>
+              <img
+                src="/logo1.png"
+                alt="VisionTech Logo"
+                className="h-24 w-24 object-contain"
+              />
+              
             </a>
           </div>
 
@@ -43,10 +35,10 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="px-5 py-2 text-gray-700 hover:text-orange-600 font-medium transition-all duration-200 relative group rounded-lg hover:bg-orange-50"
+                className="px-5 py-2 text-gray-700 hover:text-teal-600 font-medium transition-all duration-200 relative group rounded-lg hover:bg-teal-50"
               >
                 {link.name}
-                <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-orange-600 transition-all duration-300 group-hover:w-4/5"></span>
+                <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 group-hover:w-4/5"></span>
               </a>
             ))}
           </div>
@@ -54,8 +46,8 @@ const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden lg:flex items-center">
             <Link to="https://paystack.shop/pay/vt_4t777qss" target="_blank">
-              <button className="group relative px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl font-bold text-white transition-all duration-300 flex items-center gap-2 shadow-lg shadow-orange-500/30 hover:shadow-xl hover:shadow-orange-500/50 hover:scale-105 active:scale-95 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <button className="group relative px-6 py-3 bg-gradient-to-r from-teal-500 to-teal-600 rounded-xl font-bold text-white transition-all duration-300 flex items-center gap-2 shadow-lg shadow-teal-500/30 hover:shadow-xl hover:shadow-teal-500/50 hover:scale-105 active:scale-95 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-teal-500 to-teal-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <Heart className="w-5 h-5 relative z-10 transition-transform group-hover:scale-110 fill-white" />
                 <span className="relative z-10">Sponsor a Student</span>
               </button>
@@ -66,7 +58,7 @@ const Navbar = () => {
           <div className="lg:hidden">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2.5 rounded-xl text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-all duration-200"
+              className="p-2.5 rounded-xl text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-all duration-200"
             >
               {mobileMenuOpen ? (
                 <X className="w-6 h-6" />
@@ -104,7 +96,7 @@ const Navbar = () => {
             </a>
           ))}
           <button
-            className="w-full mt-4 px-6 py-4 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl font-bold text-white flex items-center justify-center gap-2 shadow-lg shadow-orange-500/30 hover:shadow-xl transition-all duration-300 active:scale-95"
+            className="w-full mt-4 px-6 py-4 bg-gradient-to-r from-teal-500 to-teal-600 rounded-xl font-bold text-white flex items-center justify-center gap-2 shadow-lg shadow-teal-500/30 hover:shadow-xl transition-all duration-300 active:scale-95"
             onClick={() => setMobileMenuOpen(false)}
           >
             <Heart className="w-5 h-5 fill-white" />

@@ -13,6 +13,7 @@ function App() {
     <BrowserRouter>
      <Navbar />
     <HeroSection />
+    
     <Routes>
     <Route path='/' element={ <Home />} />
     
