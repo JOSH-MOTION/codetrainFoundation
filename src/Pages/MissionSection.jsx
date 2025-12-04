@@ -6,9 +6,9 @@ export default function MissionImpactSection() {
   const { ref, inView } = useInView({ triggerOnce: true });
 
   return (
-    <div className="min-h-screen bg-[#FFF8E7]">
+    <div className="bg-[#FFF8E7]">
       {/* Two-column layout */}
-      <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
+      <div className="grid grid-cols-1 md:grid-cols-2">
 
         {/* Left: Mission */}
         <section className="flex flex-col p-12 bg-[#FFF8E7]">

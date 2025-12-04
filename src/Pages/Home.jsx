@@ -4,21 +4,24 @@ import TransparencySection from "./TransparencySection";
 import ProblemSection from "./ProblemSection";
 import PartnerSection from "./PartnerSection";
 import CTADonationSection from "./CTADonationSection";
+import ChallengesSection from "./ChallengesSection";
+import PartnershipSection from "./PartnerSection";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className=" bg-white">
       <div className="h-2 bg-teal-500" />
 
       
         
           <MissionSection />
-     
- <HowItWorks />
+          <ChallengesSection />
+            <PartnershipSection />
+ {/* <HowItWorks />
       <TransparencySection />
       <ProblemSection />
-      <PartnerSection />
-      <CTADonationSection />
+    
+      <CTADonationSection /> */}
     </div>
   );
 }
