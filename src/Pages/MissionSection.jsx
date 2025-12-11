@@ -12,14 +12,14 @@ export default function MissionImpactSection() {
 
         {/* Left: Mission */}
         <section className="flex flex-col p-12 bg-[#FFF8E7]">
-          <h2 className="font-bold text-lg mb-4">Our Mission</h2>
-          <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <h2 className="font-bold text-lg mb-4 text-[#004F4F]">Our Mission</h2>
+          <h3 className="text-4xl md:text-5xl font-bold text-[#004F4F] mb-6 leading-tight">
             We're building Africa's
             <br />
             Tech Opportunity Engine
           </h3>
 
-          <p className="text-gray-700 text-lg mb-12 max-w-2xl leading-relaxed">
+          <p className="text-[#004F4F] text-lg mb-12 max-w-2xl leading-relaxed">
             Codetrain Foundation exists to remove financial barriers to tech
             education –
             <br className="hidden md:block" />

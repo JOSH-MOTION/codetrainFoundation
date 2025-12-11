@@ -6,6 +6,7 @@ import PartnerSection from "./PartnerSection";
 import CTADonationSection from "./CTADonationSection";
 import ChallengesSection from "./ChallengesSection";
 import PartnershipSection from "./PartnerSection";
+import AlumniSuccessPage from "./AlumniSuccessPage";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
           <MissionSection />
           <ChallengesSection />
             <PartnershipSection />
+            <AlumniSuccessPage />
  {/* <HowItWorks />
       <TransparencySection />
       <ProblemSection />

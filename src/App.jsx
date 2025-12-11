@@ -3,7 +3,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import HeroSection from './components/Hero'
 import Footer from './components/Footer'
-import Home from './Pages/Home'
+import Home from './pages/Home'
 
 
 function App() {

@@ -3,7 +3,7 @@ import { Heart, BookOpen, Rocket } from "lucide-react";
 
 export default function HowItWorks() {
   return (
-    <section className="text-center mt-20">
+    <section className="text-center mt-20 ">
       <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12">
         How It Works
       </h2>
