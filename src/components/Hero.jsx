@@ -45,7 +45,7 @@ export default function DonationHero() {
                 </button>
 
                 <Link 
-                  to="/partner"
+                  to="/Appointment"
                   className="bg-transparent border-2 border-white text-white px-6 md:px-8 py-4 rounded-lg font-black hover:bg-white/10 transition-all duration-200 text-sm md:text-base whitespace-nowrap text-center"
                 >
                   Partner with us <br />

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Check, Rocket, Lightbulb, Network, DollarSign, Shield, TrendingUp, ArrowRight } from "lucide-react";
 
-export default function PartnerPage() {
+export default function Appointment() {
   // Load Calendly widget script
   useEffect(() => {
     const script = document.createElement('script');
