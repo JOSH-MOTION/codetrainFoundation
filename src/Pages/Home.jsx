@@ -1,12 +1,8 @@
 import MissionSection from "./MissionSection";
-import HowItWorks from "./HowItWorks";
-import TransparencySection from "./TransparencySection";
-import ProblemSection from "./ProblemSection";
-import PartnerSection from "./PartnerSection";
-import CTADonationSection from "./CTADonationSection";
 import ChallengesSection from "./ChallengesSection";
 import PartnershipSection from "./PartnerSection";
 import AlumniSuccessPage from "./AlumniSuccessPage";
+import HeroSection from "../components/Hero";
 
 export default function Home() {
   return (
@@ -14,7 +10,7 @@ export default function Home() {
       <div className="h-2 bg-teal-500" />
 
       
-        
+        <HeroSection />
           <MissionSection />
           <ChallengesSection />
             <PartnershipSection />

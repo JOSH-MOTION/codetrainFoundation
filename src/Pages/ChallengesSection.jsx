@@ -1,98 +1,141 @@
 import React from "react";
-import { Target } from "lucide-react";
+import { Target, AlertCircle, TrendingUp, Sparkles } from "lucide-react";
 
 export default function ChallengesSection() {
   return (
-    <div className="bg-white">
+    <div className="bg-[#FFF8E7]">
       {/* Two-column layout */}
-      <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2">
 
         {/* Left: The Challenge */}
-        <section className="flex flex-col justify-center p-12 md:p-16 bg-gradient-to-br from-teal-700 to-teal-800 text-white">
-          <h3 className="text-5xl md:text-6xl font-bold mb-12 leading-tight">
-            Talent Is Everywhere.
-            <br />
-            Opportunity Is Not
-          </h3>
-
-          {/* Point 1 */}
-          <div className="flex items-start gap-4 mb-8">
-            <div className="flex-shrink-0 mt-1">
-              <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <rect x="4" y="4" width="16" height="16" rx="2" strokeWidth="2"/>
-                <line x1="8" y1="10" x2="16" y2="10" strokeWidth="2"/>
-                <line x1="8" y1="14" x2="16" y2="14" strokeWidth="2"/>
-                <line x1="8" y1="18" x2="12" y2="18" strokeWidth="2"/>
-              </svg>
+        <section className="relative flex flex-col justify-center p-8 md:p-12 bg-gradient-to-br from-teal-700 via-teal-600 to-teal-700 text-white overflow-hidden">
+          {/* Background decoration */}
+          <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-teal-800/30 rounded-full blur-3xl" />
+          
+          <div className="relative z-10">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full mb-6">
+              <AlertCircle className="w-3.5 h-3.5" />
+              <span className="text-xs font-semibold">The Challenge</span>
             </div>
-            <p className="text-xl leading-relaxed">
-              Across Ghana and Africa, financial hardship prevents capable youth from accessing tech careers that could uplift their lives and families
-            </p>
-          </div>
 
-          {/* Point 2 */}
-          <div className="flex items-start gap-4">
-            <div className="flex-shrink-0 mt-1">
-              <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <rect x="5" y="11" width="14" height="10" rx="2" strokeWidth="2"/>
-                <path d="M12 11V7a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v4" strokeWidth="2"/>
-                <circle cx="12" cy="16" r="1" fill="currentColor"/>
-              </svg>
+            <h3 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
+              Talent Is Everywhere.
+              <br />
+              <span className="text-teal-200">Opportunity Is Not.</span>
+            </h3>
+
+            {/* Point 1 */}
+            <div className="group mb-6">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 mt-1 bg-white/10 backdrop-blur-sm p-3 rounded-xl group-hover:bg-white/20 transition-all duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <rect x="4" y="4" width="16" height="16" rx="2" strokeWidth="2"/>
+                    <line x1="8" y1="10" x2="16" y2="10" strokeWidth="2"/>
+                    <line x1="8" y1="14" x2="16" y2="14" strokeWidth="2"/>
+                    <line x1="8" y1="18" x2="12" y2="18" strokeWidth="2"/>
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-lg leading-relaxed text-white/95">
+                    Across Ghana and Africa, <span className="font-bold text-teal-200">financial hardship prevents</span> capable youth from accessing tech careers that could uplift their lives and families
+                  </p>
+                </div>
+              </div>
             </div>
-            <p className="text-xl leading-relaxed">
-              Without support, promising learners risk losing access to training, internships, and jobs
-            </p>
+
+            {/* Point 2 */}
+            <div className="group">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 mt-1 bg-white/10 backdrop-blur-sm p-3 rounded-xl group-hover:bg-white/20 transition-all duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <rect x="5" y="11" width="14" height="10" rx="2" strokeWidth="2"/>
+                    <path d="M12 11V7a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v4" strokeWidth="2"/>
+                    <circle cx="12" cy="16" r="1" fill="currentColor"/>
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-lg leading-relaxed text-white/95">
+                    Without support, promising learners risk <span className="font-bold text-teal-200">losing access</span> to training, internships, and jobs
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
         {/* Right: 100 Scholarships. 100 Futures */}
-        <section className="flex flex-col justify-center p-12 md:p-16 bg-gradient-to-br from-teal-600 to-teal-700 text-white">
-          {/* Main Heading */}
-          <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
-            100 Scholarships.
-            <br />
-            100 Futures.
-          </h2>
+        <section className="relative flex flex-col justify-center p-8 md:p-12 bg-gradient-to-br from-amber-50 via-[#FFF8E7] to-amber-50 overflow-hidden">
+          {/* Background decoration */}
+          <div className="absolute top-0 left-0 w-96 h-96 bg-teal-500/5 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl" />
+          
+          <div className="relative z-10">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-teal-600/10 border border-teal-600/20 rounded-full mb-4">
+              <Sparkles className="w-3.5 h-3.5 text-teal-700" />
+              <span className="text-teal-700 text-xs font-semibold">Our Goal for 2026</span>
+            </div>
 
-          {/* Subheading */}
-          <p className="text-xl mb-12 leading-relaxed">
-            Our fundraising goal includes two urgent priorities:
-          </p>
+            {/* Main Heading */}
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+              <span className="text-[#004F4F]">100 Scholarships.</span>
+              <br />
+              <span className="bg-gradient-to-r from-teal-600 to-teal-500 bg-clip-text text-transparent">
+                100 Futures.
+              </span>
+            </h2>
 
-          {/* Phase 1 */}
-          <div className="mb-10">
-            <div className="flex items-start gap-4 mb-4">
-              <div className="bg-orange-500 p-3 rounded-full flex-shrink-0">
-                <Target className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold mb-2">
-                  Phase 1–Immediate: Arrears Relief
-                </h3>
+            {/* Subheading */}
+            <p className="text-base mb-8 leading-relaxed text-[#004F4F]/80 font-medium">
+              Our fundraising goal includes two urgent priorities:
+            </p>
+
+            {/* Phase 1 */}
+            <div className="mb-6 group">
+              <div className="bg-white border-2 border-teal-600/20 rounded-xl p-5 hover:border-teal-600/40 hover:shadow-lg transition-all duration-300">
+                <div className="flex items-start gap-4">
+                  <div className="bg-gradient-to-br from-teal-500 to-teal-600 p-2.5 rounded-xl flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <Target className="w-5 h-5 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold mb-2 text-[#004F4F]">
+                      Phase 1—Immediate: Arrears Relief
+                    </h3>
+                    <p className="text-base leading-relaxed text-[#004F4F]/80">
+                      Clear <span className="font-bold text-teal-700 text-lg">$73,000 USD</span> in unpaid tuition so that <span className="font-bold text-teal-700">60 current students</span> can finish their program and secure jobs.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <p className="text-lg leading-relaxed ml-14">
-              Clear <strong>$73,000 USD</strong> in unpaid tuition so that 60
-              current students can finish their program and secure jobs.
-            </p>
-          </div>
 
-          {/* Phase 2 */}
-          <div>
-            <div className="flex items-start gap-4 mb-4">
-              <div className="bg-orange-500 p-3 rounded-full flex-shrink-0">
-                <Target className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold mb-2">
-                  Phase 2–Future: 100 Scholarships
-                </h3>
+            {/* Phase 2 */}
+            <div className="group mb-6">
+              <div className="bg-white border-2 border-teal-600/20 rounded-xl p-5 hover:border-teal-600/40 hover:shadow-lg transition-all duration-300">
+                <div className="flex items-start gap-4">
+                  <div className="bg-gradient-to-br from-teal-600 to-teal-700 p-2.5 rounded-xl flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <TrendingUp className="w-5 h-5 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold mb-2 text-[#004F4F]">
+                      Phase 2—Future: 100 Scholarships
+                    </h3>
+                    <p className="text-base leading-relaxed text-[#004F4F]/80">
+                      Raise <span className="font-bold text-teal-700 text-lg">$300,000 USD</span> to fully fund <span className="font-bold text-teal-700">100 new scholarships</span> for the 2026 cohort.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <p className="text-lg leading-relaxed ml-14">
-              Raise <strong>$300,000 USD</strong> to fully fund 100 new
-              scholarships for the 2026 cohort.
-            </p>
+
+            {/* Total Impact Callout */}
+            <div className="bg-gradient-to-r from-teal-600 to-teal-700 rounded-xl p-5 text-white text-center shadow-lg">
+              <p className="text-xs font-semibold mb-1 text-teal-100">Total Fundraising Goal</p>
+              <p className="text-4xl font-bold">$373,000</p>
+              <p className="text-sm mt-2 text-teal-100">Transforming 160 lives through tech education</p>
+            </div>
           </div>
         </section>
       </div>

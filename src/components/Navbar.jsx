@@ -9,8 +9,8 @@ const Navbar = () => {
     { name: "Home", href: "#home" },
     { name: "Our Mission", href: "#mission" },
     { name: "Stories", href: "#stories" },
-    { name: "Partners", href: "#partners" },
-    { name: "Students", href: "https://codetrainafrica.com" },
+    // { name: "Partners", href: "#partners" },
+    // { name: "Students", href: "https://codetrainafrica.com" },
   ];
 
   return (

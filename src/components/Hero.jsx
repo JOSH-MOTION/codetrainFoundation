@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function DonationHero() {
   return (
@@ -39,15 +40,17 @@ export default function DonationHero() {
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <button className="bg-white text-teal-900 px-6 md:px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 group text-sm md:text-base">
                   <span className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2">
-                    <span>Sponsor a Student – $3,000</span>
-                    <span className="text-xs md:text-sm opacity-75">/ 36 Scholarships</span>
+                    <span>Sponsor a Student</span>
                   </span>
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                 </button>
 
-                <button className="bg-transparent border-2 border-white text-white px-6 md:px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-all duration-200 text-sm md:text-base whitespace-nowrap">
-                  Partner with us 
-                </button>
+                <Link 
+                  to="/partner"
+                  className="bg-transparent border-2 border-white text-white px-6 md:px-8 py-4 rounded-lg font-black hover:bg-white/10 transition-all duration-200 text-sm md:text-base whitespace-nowrap text-center"
+                >
+                  Partner with us <br />
+                  <span className="font-thin">Schedule a meeting</span>
+                </Link>
               </div>
 
               {/* Partner Logos */}

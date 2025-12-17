@@ -38,8 +38,11 @@ export default function MissionImpactSection() {
           <h2 className="font-bold text-3xl mb-4">Our Impact</h2>
 
           {/* Short Description */}
-          <p className="mb-12 text-lg leading-relaxed max-w-2xl">
+          {/* <p className="mb-12 text-lg leading-relaxed max-w-2xl">
             Codetrain Africa is one of Ghana's leading <strong>SOFTWARE ENGINEERING & DESIGN SCHOOLS</strong>, training young Africans to thrive in the global digital economy.
+          </p> */}
+           <p className="mb-12 text-lg leading-relaxed max-w-2xl">
+           Through our partnership with <strong>Codetrain Africa</strong> Ghana's leading softawre Engineering design school, we have succesfully made a big impact resulting in great student to emplyment outcomes.
           </p>
 
           {/* Statistics Cards */}
