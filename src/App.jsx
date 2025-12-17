@@ -21,7 +21,6 @@ function App() {
     <Route path='/partner' element={ <PartnerPage />} />
   
     </Routes>
-    
     <Footer />
     </BrowserRouter>
    

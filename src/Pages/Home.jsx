@@ -15,11 +15,6 @@ export default function Home() {
           <ChallengesSection />
             <PartnershipSection />
             <AlumniSuccessPage />
- {/* <HowItWorks />
-      <TransparencySection />
-      <ProblemSection />
-    
-      <CTADonationSection /> */}
     </div>
   );
 }
