@@ -178,7 +178,7 @@ export default function PartnershipSection() {
               <div className="hidden lg:block w-px h-8 bg-white/30" />
               
               <div className="flex flex-col sm:flex-row items-center gap-2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-xl">
-                <span className="font-semibold">Learn More:</span>
+                <span className="font-semibold">Admission</span>
                 <a 
                   href="https://www.codetrainfoundation.org" 
                   target="_blank"
