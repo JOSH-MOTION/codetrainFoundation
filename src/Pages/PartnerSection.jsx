@@ -185,7 +185,7 @@ export default function PartnershipSection() {
                   rel="noopener noreferrer"
                   className="underline hover:text-teal-200 transition-colors font-medium"
                 >
-                  codetrainfoundation.org
+                  codetrainadmissions@codetrainafrica.com
                 </a>
               </div>
             </div>
