@@ -9,12 +9,25 @@ export default function Home() {
     <div className=" bg-white">
       <div className="h-2 bg-teal-500" />
 
+      <section id="home">
+       <HeroSection />
+      </section>
       
-        <HeroSection />
+      <section id="mission">
           <MissionSection />
+      </section>
+
+      <section id="challenges">
           <ChallengesSection />
+      </section>
+
+      <section id="partnership">
             <PartnershipSection />
+      </section>
+
+      <section id="alumni-success">
             <AlumniSuccessPage />
+      </section>
     </div>
   );
 }
