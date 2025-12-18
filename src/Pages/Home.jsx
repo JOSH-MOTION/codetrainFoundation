@@ -25,7 +25,7 @@ export default function Home() {
             <PartnershipSection />
       </section>
 
-      <section id="alumni-success">
+      <section id="stories">
             <AlumniSuccessPage />
       </section>
     </div>

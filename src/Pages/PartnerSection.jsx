@@ -37,7 +37,7 @@ export default function PartnershipSection() {
 
           {/* Corporate Partner - Premium Card */}
           <Link 
-            to="/partner"
+            to="/Appointment"
             className="group relative bg-gradient-to-br from-teal-600 to-teal-700 p-8 md:p-10 rounded-3xl text-white shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] overflow-hidden"
           >
             {/* Animated Background Glow */}
@@ -124,7 +124,7 @@ export default function PartnershipSection() {
 
           {/* Mentor / Provide Equipment */}
           <Link 
-            to="/partner"
+            to="/Appointment"
             className="group relative bg-gradient-to-br from-teal-600 to-teal-700 p-8 md:p-10 rounded-3xl text-white shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-teal-500/0 to-teal-600/0 group-hover:from-teal-500/20 group-hover:to-teal-600/10 transition-all duration-500" />
