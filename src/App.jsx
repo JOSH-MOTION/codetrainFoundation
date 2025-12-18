@@ -2,8 +2,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import Home from './pages/Home'
-import Appointment from './pages/Appointment'
+import Home from './Pages/Home'
+import Appointment from './Pages/Appointment'
 
 function App() {
   return (
